@@ -1,1 +1,1 @@
-select customers.* from customers where not exists (select * from orders where orders.customer_id = customers.customer_id);
+select distinct customers.* from customers where not exists (select * from orders where orders.customer_id = customers.customer_id);
