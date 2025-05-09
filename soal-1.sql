@@ -1,1 +1,1 @@
-select customers.* from customers left join orders on customers.customer_id = orders.customer_id where customers.customer_id not exists in orders.customer_id;
+select customers.* from customers where not exists (select * from orders where orders.customer_id = customers.customer_id);
