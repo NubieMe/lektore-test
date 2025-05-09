@@ -1,4 +1,4 @@
-function Answer(data, n) {
+function answer(data, n) {
     let obj = {};
     
     for (const id of data) {
@@ -20,6 +20,6 @@ function Answer(data, n) {
 }
 
 const data = [1,4,23,6,4,3,2]
-const result = Answer(data, 1)
+const result = answer(data, 1)
 
 console.log(result)
